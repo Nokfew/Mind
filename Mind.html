@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+
+<title>Congratulations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="Mind.css">
+
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+
+
+</head>
+
+
+<body>
+
+
+  <p class="Heading">Congratulations to Mind</p>
+
+  <div class="w3-content w3-section" style="max-width: 300px;">
+
+    <img class="mySlides w3-animate-fading" src="Photos/3B82FA38-5FD3-4288-8FA6-17981DABEBCB.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="Photos/72931B3D-7A6E-4A06-BBB1-3FA3DA000719.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="Photos/8E5514E5-2D14-4151-923F-5D14532FDEDE.jpg" style="width:100%">
+
+  </div>
+
+  <div>
+    <p class="Body">
+      Congratulations on completing this important life step. Remember to always keep climbing the staircase.
+    </p>
+  </div>
+
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 9000);
+    }
+  </script>
+</body>
+
+
+</html>
